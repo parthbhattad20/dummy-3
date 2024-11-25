@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
   const [answer, setAnswer] = useState(null);
-  const [showAnimation, setShowAnimation] = useState(false);
   const [videoPlaying, setVideoPlaying] = useState(false);
   const [showText, setShowText] = useState(false);
   const [hideText, setHideText] = useState(false); // State to control text visibility
