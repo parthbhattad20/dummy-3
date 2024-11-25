@@ -1,0 +1,42 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.App {
+  font-family: 'Arial', sans-serif;
+}
+
+.button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Confetti Animation (Optional, can be kept or removed) */
+.animation {
+  position: relative;
+  animation: confetti 2s ease-out infinite;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #f9d5d3;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: confetti 2s ease-out infinite;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(500px) rotate(360deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
